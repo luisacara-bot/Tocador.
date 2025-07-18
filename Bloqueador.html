@@ -1,15 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar Producto por Código de Barras</title>
+  <meta charset="UTF-8">
+  <title>Tocador Inteligente ✨</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: #fff0f5;
+      color: #6b2144;
+      padding: 30px;
+      margin: 0;
+    }
+    .container {
+      max-width: 750px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(255, 182, 193, 0.5);
+      border: 4px double #ffc0cb;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 34px;
+      color: #c71585;
+      margin-bottom: 0;
+    }
+    header p {
+      font-size: 16px;
+      color: #a0527d;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 15px;
+      border: 3px solid #ffb6c1;
+    }
+    h2 {
+      color: #db3d88;
+      font-size: 22px;
+    }
+    .seccion {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 12px;
+    }
+    .toxico {
+      background: #ffe6e6;
+      border-left: 6px solid #ff4d4d;
+    }
+    .eco {
+      background: #e6fff2;
+      border-left: 6px solid #28a745;
+    }
+    .ambiente {
+      background: #f0f8ff;
+      border-left: 6px solid #20b2aa;
+    }
+    .boton-eco {
+      display: inline-block;
+      background: #ff69b4;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .boton-eco:hover {
+      background: #ff1493;
+    }
+  </style>
 </head>
 <body>
-    <h1>Ingresa el código de barras del producto</h1>
-    <form action="/scan" method="POST">
-        <input type="text" name="barcode" placeholder="Código de barras" required>
-        <button type="submit">Buscar Producto</button>
-    </form>
+  <div class="container">
+    <header>
+      <h1>💄 Tocador Inteligente</h1>
+      <p>Analiza tus productos con amor y ciencia ✨</p>
+    </header>
+
+    <h2>🌞 Eucerin Solar Facial Matificante FPS 50+</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Eucerin_Sun_Protection.jpg" alt="Eucerin Solar FPS 50+">
+
+    <p><strong>Marca:</strong> Eucerin</p>
+    <p><strong>Puntaje en INCI Beauty:</strong> <span style="color: orange;">8.6/20 ⚠️</span></p>
+    <p><strong>Descripción:</strong> Protector solar facial de uso diario. Textura ligera y matificante. Recomendado para piel mixta o grasa.</p>
+
+    <div class="seccion toxico">
+      <h3>💀 Ingredientes con potencial tóxico:</h3>
+      <ul>
+        <li><strong>Homosalate:</strong> perturbador endocrino potencial</li>
+        <li><strong>Octocrylene:</strong> puede generar benzofenona (tóxica)</li>
+        <li><strong>Alcohol Denat:</strong> puede causar irritación</li>
+        <li><strong>Parfum:</strong> alérgeno común</li>
+      </ul>
+      <p><strong>⚠️ Nivel de toxicidad:</strong> Moderado</p>
+    </div>
+
+    <div class="seccion ambiente">
+      <h3>🌍 ¿Es bueno para el ambiente?</h3>
+      <p>Este producto contiene filtros químicos como <strong>Octocrylene</strong> y <strong>Homosalate</strong>, los cuales pueden tener efectos negativos en los ecosistemas marinos 🌊, especialmente en arrecifes de coral.</p>
+      <p>También incluye ingredientes sintéticos y perfume, lo que disminuye su perfil ecológico.</p>
+      <p><strong>Veredicto ambiental:</strong> ❌ No es considerado ecoamigable.</p>
+    </div>
+
+    <div class="seccion eco">
+      <h3>🌿 Alternativa Ecoamigable:</h3>
+      <p><strong>✅ Alga Maris SPF 50</strong> – Calificación: 17/20</p>
+      <p>Protector solar con filtros minerales, sin químicos dañinos. Apto para piel sensible y respetuoso con los océanos 🐠.</p>
+      <a class="boton-eco" href="https://www.laboratoiresdebie.com/en/solar-protection/" target="_blank">Ver alternativa</a>
+    </div>
+  </div>
 </body>
 </html>
